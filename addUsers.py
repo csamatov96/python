@@ -2,9 +2,7 @@
 import sys #This module provides access to some variables used or maintained by the interpreter and to functions that interact strongly with the interpreter.
 import subprocess #The subprocess module allows you to spawn new processes, connect to their input/output/error pipes, and obtain their return codes.
 while True: #infinite loop which will never stop  
-        print "\nSudo users have special privileges. Be careful!\n" #will be displayed
-        print "\nSudo users list\n: " #will be displayed
-        subprocess.call(["grep","devops","/etc/group"]) #The list of command line arguments passed to a Python script. argv[0] is the script name (it is operating system dependent whether this is a full pathname or not). If the command was executed using the -c command line option to the interpreter, argv[0] is set to the string '-c'. If no script name was passed to the Python interpreter, argv[0] is the empty string.
+        subprocess.call(["grep","____","/etc/group"]) #The list of command line arguments passed to a Python script. argv[0] is the script name (it is operating system dependent whether this is a full pathname or not). If the command was executed using the -c command line option to the interpreter, argv[0] is set to the string '-c'. If no script name was passed to the Python interpreter, argv[0] is the empty string.
         if len(sys.argv) > 1: #IF the length of argv values which is the argument of sys is bigger than 0 so then 
                 name = sys.argv[1] #assign them to name 
         else: #otherwise 
